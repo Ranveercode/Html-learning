@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>burger</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<style>
+		body {
+			font-family: "Times New Roman", Georgia, Serif;
+			line-height: 1.5;
+		} 
+	</style>
+</head>
+<body>
+	<div>
+		<nav>
+			<div class="flex justify-between px-2 py-4">
+				<ul>
+						<li>
+							<a href="#home" class="tracking-widest" >Gournmet au Catering</a>
+						</li>
+				</ul>
+				<ul class="hidden md:flex gap-8 ">
+						<li >
+							<a href="#about" >About</a>
+						</li>
+						<li >
+							<a  href="#menu" >menu</a>
+						</li>
+						<li >
+							<a href="#contact" >Contact</a>
+						</li>	
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+	<div class="container h-80 bg-[url('hamburger.jpg')] bg-cover mb-4 relative	w-full" id=" home">
+		<h1 class="text-4xl absolute bottom-0 p-2 text-slate-500 m-0 tracking-widest"> Le catering</h1>
+
+	</div>
+
+	<div class="py-24 md:flex ">
+		<div class=" hidden md:block flex-1 md:opacity-75 ">
+		<img class="picture"  src="catering.jpg" >
+		</div>	
+
+		<div class="flex-1 md:px-8 md:py-2">
+			<h1 class="text-4xl tracking-widest text-center	 ">ABOUT CATERING</h1>
+			<h2 class="font-bold py-8 text-center text-lg tracking-[.25em] md:p-0 md:mt-12">Tradition since 1889</h2>
+			<p class="my-4 text-lg">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <span class="bg-gray-300 px-3 py-1">seasonal</span> ingredients.</p>
+
+			<p class="text-gray-500 text-lg md:hidden">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		
+		</div> 
+	</div>
+
+	<div class="border-t px-6 py-24">
+		<div class="mid">
+			
+			<h1 class="text-4xl text-center my-4">Our Menu</h1>
+			
+			<h2 class=" text-2xl tracking-[.25em] my-4">Bread basket</h2>
+			<h3 class=" text-base/[17px] font-bold text-gray-500 my-4">Assortment of freshed baked fruit bread and muffins</h3>
+			<h2 class=" text-2xl tracking-[.25em] my-4">Honey Almond Granola with Fruits</h2>
+			<h3 class=" text-base/[17px] font-bold text-gray-500 my-4">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</h3>
+			<h2 class=" text-2xl tracking-[.25em] my-4">Belgian Waffle</h2>
+			<h3 class=" text-base/[17px] font-bold text-gray-500 my-4">Vanilla flavored batter with malted flour 7.50</h3>
+			<h2 class=" text-2xl tracking-[.25em] my-4">Scrambled eggs</h2>
+			<h3 class=" text-base/[17px] font-bold text-gray-500 my-4">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</h3>
+			<h2 class=" text-2xl tracking-[.25em] my-4">Blueberry Pancakes</h2>
+			<h3 class=" text-base/[17px] font-bold text-gray-500 my-4">With syrup, butter and lots of berries 8.50</h3>
+		</div>
+			<img class="md:w-full" src="tablesetting.jpg" height="882" width="552">
+		
+	</div>
+
+	<div class="border-t px-6 py-24">
+		<h1 class="text-4xl tracking-widest my-4 ">Contact</h1>
+		<p class="my-4 text-base/[19px]">We offer full-service catering for any event, large or text small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+		<h2 class="text-lg text-slate-700 font-bold my-4">Catering Service, 42nd Living St, 43043 New York, NY</h2>
+		<p class="text-base/[17px] mt-10">You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+			
+				<label for="Name"></label>
+				<input class="py-4 px-2 border-b w-full" type="text" id="Name" name="Name" placeholder="Name"><br>
+
+				<label for="Name"></label>
+				<input class="py-4 px-2 border-b w-full" type="text" id="Name" name="Name" placeholder="How many people"><br>
+
+				<label for="Name"></label>
+				<input class="py-4 px-2 border-b w-full" type="date" id="birthday" name="dates" placeholder="16/11/2024 08:00 PM"><br>
+
+				<label for="Name"></label>
+				<input class="py-4 px-2 border-b w-full" type="text" id="Name" name="Name" placeholder="Message\Special requirements"><br>
+
+				<button class="py-2 px-4 bg-gray-200 my-4">SEND MESSAGE</button>		
+	</div>
+	<footer class="footer">
+		<h1 class="text-center py-8  my-2 bg-gray-200">designed by ranveer</h1>
+	</footer>
+
+</body> 
+</html>

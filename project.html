@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>project</title>
+	<script src="https://kit.fontawesome.com/d0911aabfc.js" crossorigin="anonymous"></script>
+
+
+	<style type="text/css">
+		div , ul, body{
+			font-family: "Lato", sans-serif;
+			margin: 0px;
+			padding:0px;
+		}
+
+
+		nav div ul li{
+			display:  inline;
+		}
+		nav a {
+			text-decoration: none;
+			color: white;
+		}
+		nav ul {
+			padding: 10px;
+		}
+		 
+		.mobile {
+			display: none;
+		}
+
+		nav {
+			display: flex;
+			width: 100%;
+			background: black;
+		}
+
+		.container {
+			background-image: url('project.jpg');
+			background-size: cover;
+			width: 100%;
+			height: 300px;
+			text-align: center;
+			font-size: 25px;
+		}
+		.container h1, .container h2{
+			display: none;
+		}
+
+		.middle{
+			width: 100%;
+			text-align: center;
+/*			padding: 64px 16px;*/
+		}
+		.middle h2{
+			font-size: 30px;
+			color: black;
+			margin:10px 0px;
+		}
+
+		.middle h3 {
+			font-size: 15px;
+			font-style: italic;
+		}
+		.middle p {
+			text-align: justify;
+			font-size: 15px;
+		}
+
+		.image-info{
+			width: 100%;
+			padding: 32px 0px;
+			text-align: center;
+		}
+		.three{
+			text-align: center;
+			background: black;
+			color: white;
+			padding-top: 64px;
+		}
+
+		.three h4 {
+			font-style: italic;
+			padding: 0px 2px;
+		}
+
+		.months{
+
+			text-align: left;
+			background: black;
+			color: black;
+		}
+		.months .month{
+			padding: 20px;
+		}
+		.month div {
+		    background: white;
+		    padding: 11px;
+		    border-bottom: 1px solid #d3cccc;
+		}
+		.month .button1 {
+			background: #f44336;
+			color: white;
+			padding: 0px 8px;
+			margin-left: 16px;
+
+		}
+		.active-month {
+			display: flex;
+			justify-content: space-between;
+		}
+		.num{
+			padding: 2px 6px;
+			background: gray;
+			border-radius: 100%;
+		}
+		.cards{
+			padding: 20px;
+		}
+		.card-body{
+			padding: 2px;
+			background: white;
+			color: black; 
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<div>
+		<nav>
+			<div>
+				<ul>
+					<li>
+						<a href="#home" class="home" >Home</a>
+					</li> 
+					<li  class="mobile">
+						<a href="#middle" class="band">Band</a>
+					</li>
+					<li  class="mobile">
+						<a href="#three" class="tour">Tour</a>.
+					</li>
+					<li  class="mobile">
+						<a href="#info" class="phone">Contact</a>
+					</li>
+					<li  class="mobile">
+						more
+							<i class="fa-solid fa-caret-down"></i>
+						
+					</li>
+				</ul>
+			</div>
+			<div  class="mobile">
+				<i class="fa-solid fa-magnifying-glass search"></i>
+			</div>
+		</nav> 
+
+
+
+	</div>
+	<div class="container" id="container">
+ 		    
+             	<h1>LOS Angles</h1>
+             	<h2>We had the best time playing at vience beach</h2>
+		    </div>
+	</div>
+
+	<div class="middle" id="middle">
+
+		<h2>THE BAND</h2>
+
+		<h3>We love music</h3>
+
+		<p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+		<div class="image-info">
+			<div class="left"> 
+				<h3>Name</h3> 
+				<img class="bandmember" src="bandmember.jpg" width="340.8" height="340.8" >
+			</div>
+			<div class="left"> 
+				<h3>Name</h3> 
+				<img class="bandmember" src="bandmember.jpg" width="340.8" height="340.8" >
+			</div>
+			<div class="left"> 
+				<h3>Name</h3> 
+				<img class="bandmember" src="bandmember.jpg" width="340.8" height="340.8" >
+			</div>
+		</div>
+		 
+	</div>
+
+
+	<div class="three" id="three">
+
+		<h2> TOUR DATES</h2>
+		<h4>Remember to book your ticket</h4>
+
+		<div class="months">
+			<div class="month">
+				<div><span class="monthname">September</span> <span class="button1">   Sold out</span></div>
+				<div><span class="monthname">October</span> <span class="button1">   Sold out</span></div>
+				<div class="active-month"><span class="monthname">November</span>  <span class="num">3</span></div>
+			</div>
+			
+		</div>
+
+
+		<div class="cards">
+				
+			<div class="card">
+				<div class="card-image">
+					<img src="newyork.jpg" width="100%" height="40%">
+				</div>
+
+				<div class="card-body">
+					
+					<h4 class="country">New York</h4><br><br>
+
+	                 <p class="day">Fri 27 Nov 2016</p><br><br>
+
+	                 <p class="sentence">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p><br><br>
+
+	                 <button class="button3"> Buy Tickets</button>
+
+				</div>
+			</div>
+
+				<div class="photo2">
+					<!-- <img src="paris.jpg" width="100%" height="40%"> -->
+					<div class="collage">
+
+
+					<span class="country">Paris<br><br>
+
+                    <span class="day">  Sat 28 Nov 2016</span><br><br>
+
+                    <span class="sentence">  Praesent tincidunt sed tellus ut rutrum sed vitae justo.</span><br><br>
+
+                    <span class="button3"> Buy Tickets</span>
+                 </div>
+
+
+				</div>
+
+				<div class="photo3">
+					<!-- <img src="sanfran.jpg" width="100%" height="40%"> -->
+					<div class="collage">
+						
+					<span class="country">San Francisco<br><br>
+
+                     <span class="day">Sun 29 Nov 2016</span><br><br>
+
+                     <span class="sentence">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</span><br><br>
+
+                     <span class="button3"> Buy Tickets</span>
+					</div>
+				</div>
+			</div>
+	</div>
+		<div class="info" id="info">
+
+			<div class="contact">
+				
+				<span class="details"> CONTACT</span><br><br>
+				<i class="drop">Fan? Drop a note!</i>
+
+
+			</div>
+			<div class="table">
+				
+				<div class="chicago">
+
+					<i class="fa-solid fa-location-dot"></i> Chicago, US<br>
+                    <i class="fa-solid fa-phone"></i> Phone: +00 151515<br>
+                    <i class="fa-solid fa-envelope"></i> Email: mail@mail.com
+					
+				</div>
+				<div class="form">
+
+					<div class="box">
+						
+						<div class="box1">
+							<label for="Name"></label>
+                            <input class="input" type="text" id="Name" name="Name" placeholder="Name">
+						</div>
+
+						<div class="box2">
+							<label for="Name"></label>
+                            <input class="input2" type="text" id="Name" name="Name" placeholder="E-mail">
+						</div>
+
+
+					</div>
+					<div class="box3">
+						<label for="Name"></label>
+                           <input class="input3" type="text" id="Name" name="Name" placeholder="Message">
+					</div>
+					<button class="btn">Send</button>
+				</div>
+			</div>	
+
+		</div>
+		<div class="last">
+			<!-- <img class="map" src="map.jpg"> -->
+		</div>
+
+		<footer class="footer">
+			<i class="fa-brands fa-facebook social_media"></i>
+			<i class="fa-brands fa-instagram social_media"></i>
+			<i class="fa-brands fa-square-snapchat social_media"></i>
+			<i class="fa-brands fa-pinterest-p social_media"></i>
+			<i class="fa-brands fa-twitter social_media"></i>
+			<i class="fa-brands fa-linkedin-in social_media"></i><br><br>
+			designed by ranveer
+		</footer>
+</body>
+</html>

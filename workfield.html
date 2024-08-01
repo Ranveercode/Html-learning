@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>layout2</title>
+	<style type="text/css">
+		div{
+			background: yellow; 
+		}
+		body{
+			background: white;
+			margin: 0;
+		}
+		.Header{
+			padding: 20px 0px;
+			text-align: center;
+			font-size: 25px;
+			font-weight: bolder;
+			margin-bottom: 10px;
+		}
+		.nav{
+			
+			width: 20%;
+			height: 506px;
+			text-align: center;
+/*			margin: 20px;*/
+			margin-right: 10px;
+
+		}
+		.Menu{
+/*			margin: 15px;*/
+/*			margin-left: 280px;*/
+			background: white; 
+			width:80%;
+		}
+		.col{
+			display: inline-flex;
+			height: 420px;
+
+
+		}
+		.col1{
+			width: 60%;
+			text-align: center;
+/*			margin: 10px;*/
+			margin-right: 10px;
+		}
+		.col2{
+			width: 40%;
+			text-align: center;
+/*			margin: 10px;*/
+
+		}
+		.Footer{
+            
+			text-align: center;
+/*			margin-left: 10px;*/
+/*			margin-right: 15px;*/
+			padding: 25px 0px;
+		}
+
+		.content-body{
+			display: flex;
+			 background: white;
+		}
+	</style>
+</head>
+<body>
+	
+	
+	<div class ="Header">
+		<span>Header</span>
+	</div>
+	<div  class="content-body">
+		 
+			<div class="nav left">nav</div>
+			
+			<div class="Menu right">
+				<div style="display: flex; background: white; margin-bottom: 	10px;">
+
+					<div class="col col1">Article</div>
+					<div class="col col2">Ads</div><br>
+				</div>
+		        <div class="Footer">Footer</div>
+				
+			</div>
+		 
+	</div>
+    
+
+</body>
+</html>

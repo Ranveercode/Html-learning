@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>project</title>
+	<script src="https://kit.fontawesome.com/d0911aabfc.js" crossorigin="anonymous"></script>
+
+
+	<style type="text/css">
+		body{
+			font-family: "Lato", sans-serif;
+			margin: 0px;
+			
+		}
+		.main{
+			background-color: black;
+/*			padding: 15px;*/
+			display: flex;
+			padding: auto;
+		}
+		.home{
+			color: white;
+/*			padding-left: 10px;*/
+			text-transform: uppercase;
+			cursor: pointer;
+			padding: 12px 24px;
+			text-decoration: none;
+			text-align: center;
+			width: auto;
+		}
+		.home:hover{
+			background-color: #ccc !important;
+			color: black;
+		}
+		.band{
+			
+			padding-left: 10px;
+			color: white;
+			text-transform: uppercase;
+			cursor: pointer;
+			padding: 12px 24px;
+			text-decoration: none;
+		}
+		.band:hover{
+			background-color: #ccc !important;
+			color: black;
+		}
+		.tour{
+			padding-left: 10px;
+			color: white;
+			text-transform: uppercase;
+			cursor: pointer;
+			padding: 12px 24px;
+			text-decoration: none;
+		}
+		.tour:hover{
+			background-color: #ccc !important;
+			color: black;
+		}
+		.phone{
+			
+			padding-left: 10px;
+			color: white;
+			text-transform: uppercase;
+			cursor: pointer;
+			padding: 12px 24px;
+			text-decoration: none;
+		}
+		.phone:hover{
+			background-color: #ccc !important;
+			color: black;
+		}
+		.more{
+			color: white;
+			padding-left: 10px;
+			text-transform: uppercase;
+			cursor: pointer;
+			padding: 12px 24px;
+			text-decoration: none;
+		}
+		.more:hover{
+			background-color: #ccc!important;
+			color: black;
+		}
+		.search{
+			color: white;
+			padding: 12px 24px;
+			float: right;
+			margin-left: auto;
+
+		}
+		.search:hover{
+			color: black;
+			background-color: red;
+		}
+		.container{
+			width: 100%;
+		}
+		.text{
+			color: white;
+			position: relative;
+			text-align: center;
+			bottom: 100px;
+			font-family: "Lato", sans-serif;
+		}
+		.middle{
+			text-align: center;
+			font-family: "Lato", sans-serif ;
+			height: 700px;
+			
+		}
+
+		.cursive{
+			color: #6a6363;
+/*			font-size:20px;*/
+			font-weight: lighter;
+			margin-top: 2px;
+		}
+		.Theband{
+			font-size: 35px;
+			font-weight: lighter;
+		}
+
+		.paragraph{
+/*			border: 1px solid black;*/
+			text-align: justify;
+/*			width: 60%;*/
+/*			margin-left: 250px;*/
+			margin: auto;
+			width: 65%;
+
+			
+		    
+
+		}
+		.image{
+			display: flex;
+/*			border: 1px solid black;*/
+			margin-top: 4px;
+			padding-top:90px ;
+			height: 200px;
+			margin: auto;
+			width: 50%;
+		}
+		.bandmember{
+			border-radius: 4px;
+		}
+		.left{
+/*			border: 1px solid black;*/
+			width: 25%;
+			height: 170px;
+/*			margin-left: 350px;*/
+ 			border-radius: 4px;
+
+		}
+
+		.mid{
+/*			border: 1px solid black;*/
+			width: 25%;
+			height: 170px;
+			margin-left: 50px ;
+		}
+
+		.right{
+/*			border: 1px solid black;*/
+			width: 25%;
+			margin-left: 50px;
+			height: 170px;
+		}
+		.three{
+			margin-top: 15px;
+			background: black;
+			height: 700px;
+			padding-top: 64px;
+		}
+		.tourdate{
+			text-align: center;
+			font-size: 40px;
+			font-weight: lighter;
+			color: white;
+			font-family: "Segoe UI", Arial, sans-serif !important;
+		}
+		.remember{
+			font-family: cursive;
+			font-weight: lighter;
+			text-align: center;
+			margin-top: 4px;
+			color: grey;
+
+		}
+		.september
+		{
+			margin-left: 10px;
+		}
+		.october{
+			margin-left: 10px;
+		}
+		.november{
+			margin-left: 10px;
+
+		}
+		.num{
+			color: white;
+			background-color: black;
+			border-radius: 100%;
+			padding: 3px 8px;
+			float: right;
+			margin-right: 30px;
+/*			text-align: center;*/
+			margin-bottom: 2px;
+
+
+		}
+		.months{
+			background-color: white;
+			border: 1px solid white;
+/*			margin-left: 300px;*/
+/*			margin-top: 25px;*/
+            margin: auto;
+			width: 50%;
+			height: 100px;
+			font-size: 15px;
+			color: grey;
+			font-weight: lighter;
+
+		}
+		.button1{
+			background-color: #f44336;
+			color: white;
+			padding: 3px 13px;
+			margin-left: 6px;
+			margin-top: 2px;
+		}
+		.month{
+			margin-top: 10px;
+		}
+		.photo{
+			display: flex;
+/*			border: 1px solid black;*/
+			margin-top: 20px;
+			height: 350px;
+			margin: auto;
+			width: 50%;
+			margin-top: 15px !important;
+		}
+		.photo1{
+/*			border: 1px solid white;*/
+			width: 35%;
+/*			margin-left: 300px;*/
+			background-color: white;
+		}
+		.photo2{
+/*			border: 1px solid whitesmoke;*/
+			width: 35%;
+			margin-left: 15px ;
+			background-color: white;
+
+		}
+		.photo3{
+			border: 1px solid white;
+			width: 35%;
+			margin-left: 15px;
+			background-color: white;
+		}
+		.day{
+			color: grey;
+			font-weight: 500;
+			font-weight: bolder;
+/*			margin-left: 10px;*/
+		}
+		.country{
+/*			margin-left: 10px;*/
+		}
+		.sentence{
+/*			margin-left: 15px;*/
+		}
+		.collage{
+			padding: 10px;
+		}
+		.button3{
+			background-color: black;
+			color: white;
+			cursor: pointer;
+			font-weight: smaller;
+			font-size: 20px;
+			padding: 5px 15px;
+			margin-left: 4px;
+			float: left;
+		}
+		.button3:hover{
+			background-color: #bfbfbf;
+			color: black;
+		}
+
+		.info{
+/*			border: 1px solid black;*/
+			height: 350px;
+			margin-top: 200px;
+			
+		}
+		.contact{
+			text-align: center ;
+			margin-top: 25px;
+			margin-bottom: 30px;
+
+		}
+		.details{
+			font-size: 25px;
+			font-weight: bolder;
+		}
+		.drop{
+			font-size: 20px;
+			color: grey;
+		}
+		.table{
+			display: flex;
+			margin: auto;
+			width: 50%;
+			height: 200px;
+
+		}
+		.chicago{
+/*			border: 1px solid black;*/
+/*			width: 15px;*/
+			margin-left: 15px;
+			width: 50%;
+			font-weight: lighter;
+			font-size: 18px;
+		}
+		.form{
+/*			border: 1px solid black;*/
+			width: 50%;
+			margin-left: 20px;
+		}
+		.box{
+			display: flex;
+		}
+		.box1{
+/*			padding: 12px 26px;*/
+			height: 15px;
+		}
+		.box2{
+			margin-left: 8px;
+		}
+		.input{
+			height: 34px;
+			overflow: visible;
+			width: 100%;
+			margin-right: 4px;
+		}
+		.input2{
+			margin-left: 6px;
+			overflow: visible;
+			height: 34px;
+			width: 95%;
+
+		}
+		.input3{
+			margin-top: 4px;
+			height: 34px;
+			width: 100%;
+
+		}
+		.btn{
+			background-color: black;
+			color: white;
+			padding: 10px;
+			float: right;
+			width: 50%;
+			margin: auto;
+			margin-top: 6px !important;
+			
+			font-weight: bolder;
+			font-size: 20px;
+			cursor: point;
+		}
+		.btn:hover{
+			background-color: #bfbfbf;
+			color: black;
+		}
+		.map{
+			width: 100%;
+		}
+		.footer{
+			padding-top: 64px;
+			margin: auto;
+			width: 50%;
+			text-align: center;
+			padding-bottom: 64px;
+		}
+		.social_media{
+			font-size: 25px;
+			color: grey;
+		}
+		.social_media:hover{
+			opacity: 0.60;
+		}
+		i{
+			margin-right: 20px;
+			font-size: 18px;
+		}
+
+
+		/*responsive */
+
+		@media only screen and (max-width: 768px) {
+			body{
+				width: 100%;
+			}
+			 .paragraph{
+			 	width: auto;
+			 	padding: 0px 10px;
+			 	margin: auto;
+
+			 }
+			 .middle{
+			 	padding-bottom: 5px;
+			 }
+			 .image{
+			 	padding-top: 32px !important;
+    			padding-bottom: 32px !important;
+    			width: 91%;
+    			margin: auto;
+    			padding-left: 25px !important;
+    			padding-right: 25px;
+			 }
+			 .left{
+			 	width: 87%;
+			 	padding-left: 25px;
+			 }
+			 .mid{
+			 	width: 87%;
+			 	padding-left: 32px;
+			 }
+			 .right{
+			 	width: 87%;
+			 	padding-left: 32px;
+			 }
+			 .three{
+/*			 	margin: auto;*/
+			 	width: 100%;
+			 }
+			 .tourdate{
+
+			 }
+			 .months{
+				margin: auto;
+		        width: 97%;
+		        margin-left: 11px !important;
+		        margin-right: 11px !important;
+			 }
+			 .photo{
+			 	margin: auto;
+			 	width: 100%;
+			 	padding: 10px 10px;
+
+			 }
+			 .photo1{
+			 	width: 31%;
+			 }
+			 .photo2{
+			 	width: 31%;
+			 }
+			 .photo3{
+			 	width: 31%;
+			 }
+			 .chicago{
+			 	float: left;
+			 	width: 50%;
+			 }
+			 .info{
+			 	height: 317px;
+        		margin-top: 127px;
+			 }
+			 .table{
+			 	margin: auto;
+			 	width: 100%;
+			 }
+			 .fa_solid{
+			 	float: left;
+			 }
+			 .btn{
+
+			 }
+			 .footer{
+			 	margin: auto;
+			 	width: 100%;
+			 }
+			 .fa_brands{
+			 	padding: 0px;
+			 }
+			 .form{
+
+			 }
+			 .box{
+			 	width: 97.5%;
+			 }
+			 .box3{
+			 	width: 97.5%;
+			 }
+			 .box2{
+				margin-left: 8px;
+			 }
+		}
+
+
+
+		@media only screen and (max-width: 600px) {
+			body{
+				margin: 0;
+				width: 100%;
+			}
+			.main{
+				width: 100%;
+			}
+
+			
+
+			.middle{
+				height: auto;
+
+			}
+
+			.image{
+				display: inline-block;
+			}
+
+			.left{
+				padding-bottom: 15px;
+				margin: auto;
+				width: 60%;
+				height: 301px;
+			}
+			.mid{
+				padding-top: 35px;
+				padding-bottom: 15px;
+				margin: auto;
+				width: 60%;
+				height: 301px;
+			}
+			.right{
+				padding-top: 35px;
+				padding-bottom: 15px;
+				margin: auto;
+				width: 60%;
+				height: 301px;
+			}
+			.three{
+				height: auto;
+				background: black;
+
+			}
+			.photo{
+				display: inline-block;
+				height: auto;
+			}
+			.collage{
+				height: 200px;
+			}
+			.photo1{
+				margin: auto;
+				width: 90%;
+				height: 100%;
+
+			}
+			.collage{
+				padding-top: 20px ;
+			}
+			.photo2{
+				margin: auto;
+				margin-top: 15px;
+				width: 90%;
+				height: 100%;
+			}
+			.photo3{
+				width: 90%;
+				margin: auto;
+				margin-top: 15px !important;
+				margin-bottom: 70px !important;
+				height: 100%;
+			}
+			.info{
+				height: auto;
+			}
+			.table{
+				display: inline-block;
+				margin: auto;
+				width: 100%;
+				height: auto;
+			}
+			.chicago{
+				width: 100%;
+				float: none;
+			}
+			.form{
+				width: 100%;
+			}
+			.box{
+				display: inline-block;
+				width: 100%;
+
+			}
+			.box1{
+
+				padding: 8px;
+				width: 100%;
+				height: auto;
+				display: block;
+
+			}
+			.box2{
+				width: 100%;
+				padding: 8px;
+				display: block;
+				margin: auto;
+
+			}
+			.input{
+				width: 88%;
+
+			}
+			.input2{
+				width: 88%;
+				
+			}
+			.input3{
+				width: 88%;
+			}
+			.btn{
+
+			}
+
+
+
+		}
+
+
+
+
+
+	</style>
+</head>
+<body>
+	<div class="main">
+
+		<a href="#container" class="home" >Home</a>
+		<a href="#middle" class="band">Band</a>
+		<a href="#three" class="tour">Tour</a>.
+		<a href="#info" class="phone">Contact</a>
+		<div class="more">
+			<div class="dropbtn">more
+				<i class="fa-solid fa-caret-down"></i>
+
+			</div>
+			<!-- <a class="dropdown_content">merchandise</a>
+			<a class="dropdown_content">extras</a>
+			<a class="dropdown_content">media</a> -->
+		</div>
+
+
+		<i class="fa-solid fa-magnifying-glass search"></i>
+
+	</div>
+	<div class="container" id="container">
+
+			
+		<img src="project.jpg" width=100% height="100%">
+
+		    <div class="text">
+
+             LOS Angles  <br><br>
+             We had the best time playing at vience beach 
+			
+		    </div>
+
+	
+	</div>
+
+	<div class="middle" id="middle">
+
+		<div class="Theband" >THE BAND</div><br><br>
+
+		<i class="cursive">We love music</i><br><br>
+
+		<div class="paragraph">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+
+		<div class="image">
+			
+			<div class="left"> Name<br><br><img class="bandmember" src="bandmember.jpg" width="100%" height="100%" ></div>
+			<div class="mid"> Name<br><br><img class="bandmember" src="bandmember.jpg" width="100%" height="100%" ></div>
+			<div class="right"> Name<br><br><img class="bandmember" src="bandmember.jpg" width="100%" height="100%" ></div>
+
+
+		</div>
+		
+
+	</div>
+
+
+	<div class="three" id="three">
+
+		<div class="tourdate"> TOUR DATES</div>
+		<div class="remember"> <i>Remember to book your ticket </i></div>
+		<br><br>
+		<div class="months">
+			<div class="month">
+			
+			<div class="september">  september<span class="button1">   Sold out</span>
+			<hr>
+		    </div>
+			<div class="october">october<span class="button1">   Sold out</span>
+			<hr>
+		    </div>
+			<div class="november">november <span class="num">3</span></div>
+
+
+			</div>
+			
+		</div>
+			<div class="photo">
+				
+				<div class="photo1">
+					<img src="newyork.jpg" width="100%" height="40%">
+					<div class="collage">
+						
+					<span class="country">New York<br><br>
+
+                     <span class="day">Fri 27 Nov 2016</span><br><br>
+
+                     <span class="sentence">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</span><br><br>
+
+                     <span class="button3"> Buy Tickets</span>
+
+					</div>
+				</div>
+
+				<div class="photo2"><img src="paris.jpg" width="100%" height="40%">
+					<div class="collage">
+
+
+					<span class="country">Paris<br><br>
+
+                    <span class="day">  Sat 28 Nov 2016</span><br><br>
+
+                    <span class="sentence">  Praesent tincidunt sed tellus ut rutrum sed vitae justo.</span><br><br>
+
+                    <span class="button3"> Buy Tickets</span>
+                 </div>
+
+
+				</div>
+
+				<div class="photo3"><img src="sanfran.jpg" width="100%" height="40%">
+					<div class="collage">
+						
+					<span class="country">San Francisco<br><br>
+
+                     <span class="day">Sun 29 Nov 2016</span><br><br>
+
+                     <span class="sentence">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</span><br><br>
+
+                     <span class="button3"> Buy Tickets</span>
+					</div>
+				</div>
+			</div>
+	</div>
+		<div class="info" id="info">
+
+			<div class="contact">
+				
+				<span class="details"> CONTACT</span><br><br>
+				<i class="drop">Fan? Drop a note!</i>
+
+
+			</div>
+			<div class="table">
+				
+				<div class="chicago">
+
+					<i class="fa-solid fa-location-dot"></i> Chicago, US<br>
+                    <i class="fa-solid fa-phone"></i> Phone: +00 151515<br>
+                    <i class="fa-solid fa-envelope"></i> Email: mail@mail.com
+					
+				</div>
+				<div class="form">
+
+					<div class="box">
+						
+						<div class="box1">
+							<label for="Name"></label>
+                            <input class="input" type="text" id="Name" name="Name" placeholder="Name">
+						</div>
+
+						<div class="box2">
+							<label for="Name"></label>
+                            <input class="input2" type="text" id="Name" name="Name" placeholder="E-mail">
+						</div>
+
+
+					</div>
+					<div class="box3">
+						<label for="Name"></label>
+                           <input class="input3" type="text" id="Name" name="Name" placeholder="Message">
+					</div>
+					<button class="btn">Send</button>
+				</div>
+			</div>
+
+		</div>
+		<div class="last">
+			<img class="map" src="map.jpg">
+		</div>
+
+		<footer class="footer">
+			<i class="fa-brands fa-facebook social_media"></i>
+			<i class="fa-brands fa-instagram social_media"></i>
+			<i class="fa-brands fa-square-snapchat social_media"></i>
+			<i class="fa-brands fa-pinterest-p social_media"></i>
+			<i class="fa-brands fa-twitter social_media"></i>
+			<i class="fa-brands fa-linkedin-in social_media"></i><br><br>
+			designed by ranveer
+		</footer>
+</body>
+</html>

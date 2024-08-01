@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>architect</title>
+	<style type="text/css">
+
+		body,ul,div{
+			font-family: Verdana, sans-serif;
+		    font-size: 15px;
+		    line-height: 1.5;
+/*		    padding: 0;*/
+		    height: 100%;
+		    width: auto;
+		    margin: 0;
+		}
+		*{
+			box-sizing: inherit;
+		}
+		nav div ul li{
+			display: inline;
+		}
+		nav a{
+			padding: 8px 16px;
+			letter-spacing: 4px;
+		}
+		ul li a{
+			text-decoration: none;
+			color: black;
+		}
+		nav ul{
+			padding: 14px 16px;
+		}
+		.mobile{
+			display: none;
+		}
+		.container{
+			
+				position: relative;
+				background-image: url(architect.jpg);
+				height: 275px;
+				background-size: cover;
+				background-position: center;
+				width: auto;
+				margin: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+		}
+		.container h1{
+			background-color: black;
+			opacity: 0.75;
+			color: white;
+			font-size: 36px;
+			font-weight: bolder;
+			font-family: "Segoe UI", Arial, sans-serif !important;
+			padding: 5px 14px;
+		}
+		.container span{
+			display: none;
+		}
+		.projects{
+			padding: 8px 32px;
+
+		}
+		.projects h1{
+			padding: 48px 8px;
+			margin: 0px;
+			font-size: 24px;
+			font-family: "Segoe UI", Arial, sans-serif;
+			font-weight: normal;
+		}
+		
+		.first{
+			background-image: url(brick.jpg);
+			position: relative;
+/*			border: solid 2px black	; */
+/*			padding: 0px 8px;*/
+			max-width: 100;
+			height: 256px;
+			margin: 0;
+			margin-bottom: 16px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 100%;
+
+		}
+		.first p{
+			background-color: black;
+			display: inline-block;
+			color: white;
+			padding: 8px;
+			margin: 0px;
+		}
+		.about{
+			padding: 8px 32px;
+		}
+		.about h1{
+			margin: 10px 0px;
+			padding: 16px 0px;
+			font-size: 24px;
+			font-family: "Segoe UI", Arial, sans-serif;
+			font-weight: 400;
+		}
+		.collage{
+			margin-bottom: 16px;
+		}
+		.photo{
+			height: 259px;
+			width: 100%;
+			margin: 0;
+		}
+		.collage h4{
+			margin: 10px 00px;
+			font-size: 24px;
+			font-family:  "Segoe UI", Arial, sans-serif; 
+			font-weight: 400;
+		}
+		.collage p{
+			font-family: Verdana, sans-serif;
+			font-size: 15px;
+			font-weight: 400;
+		}
+		button{
+			padding: 8px 16px;
+			font-size: 15px;
+			width: 100%;
+			border: none;
+			background-color: #f1f1f1;
+		}
+		.contact{
+			padding: 32px 32px;
+		}
+		.contact h1{
+			font-size: 24px;
+			margin: 10 px 0px;
+			padding: 16px 0px;
+			font-family: "Segoe UI", Arial, sans-serif;
+			font-weight: 400;
+		}
+		.input{
+			padding: 8px;
+			width: 100%;
+			margin-bottom: 16px;
+		}
+		.button{
+			width: 55%;
+			background-color: black;
+			color: white;
+			font-size: 15px;
+			padding: 8px 16px;
+			margin: 16px 0px;
+		}
+		.image{
+			padding: 0px 32px;
+			width: auto;
+			margin
+		}
+		.gallery{
+			height: auto;
+			max-width: 100%;
+		}
+		.footer{
+			background-color: black;
+			color: white;
+			text-align: center;
+			font-size: 15px;
+			padding: 31px  0px;
+		}
+
+		@media only screen and (min-width:600px){
+			nav div ul li {
+				display:inline;
+			}
+			.mobile{
+				display:flex;
+				justify-content:right;
+				align-items:center;
+			}
+			.nav{
+				display: flex;
+    			justify-content: space-between;
+			}
+			.container span{
+				display: inline;
+				color: whitesmoke;
+				font-size: 36px;
+				margin-left: 8px;
+			}
+			.parent{
+				display: flex;
+    			flex-wrap: wrap;
+    			justify-content: space-between;
+			}
+			.function{
+
+				display: flex;
+			}
+			.first{
+				width: 49%;
+			}
+
+			.member{
+				display: flex;
+			}
+			.collage{
+				width: 50%;
+				margin-left: 15px;
+			}
+
+			@media only screen and (min-width:992px){
+
+			.charge{
+				display: flex;
+			}
+			.parent{
+				display: flex;
+				flex-wrap: wrap;
+    			justify-content: space-between;
+
+			}
+
+			.first{
+				width: 24%;
+				
+			}
+
+			}
+
+		}
+
+		
+	</style>
+</head>
+<body>
+	<div>
+		<nav>
+			<div class="nav">
+				<ul>
+						<li>
+							<a href="#home" >BR architect</a>
+						</li>
+				</ul>
+				<ul class="mobile">
+
+						
+						<li >
+							<a href="#about" >projects</a>
+						</li>
+						<li >
+							<a href="#menu" >About</a>
+						</li>
+						<li >
+							<a href="#contact" >Contact</a>
+						</li>	
+						
+				
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+	<div class="container">
+		
+		<h1>BR</h1><span>Architect</span>
+	</div>
+
+	<div class="projects">
+		<h1>Projects</h1>
+
+		<div class="parent">
+		
+
+					<div class="first">
+						<p>Summer house</p>
+					</div>
+				
+
+					<div class="first">
+						<p>black house</p>
+					</div>
+
+					<div class="first">
+						<p>renavaled</p>
+					</div>
+
+					<div class="first">
+						<p>barn house</p>
+					</div>
+
+
+					<div class="first">
+						<p>black house</p>
+					</div>
+
+					<div class="first">
+						<p>Renavaled</p>
+					</div>
+
+					<div class="first">
+						<p>barn house</p>
+					</div>
+
+					<div class="first">
+						<p>barn house</p>
+					</div>
+
+					
+		</div>			
+
+
+	</div>
+
+	<div class="about">
+		<h1>About</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+		<div class="member">
+		
+			<div class="collage">
+				<img class="photo" src="john.jpg" >
+				<h4>John Doe</h4>
+				<p>CEO & Founder</p>
+				<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+				<button >Contact</button>
+
+			</div>
+			<div class="collage">
+				<img class="photo" src="jane.jpg">
+				<h4>jane Doe</h4>
+				<p>Architect</p>
+				<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+				<button >Contact</button>
+			</div>
+
+		</div>
+		<div class="member">
+			<div class="collage">
+				<img class="photo" src="mike.jpg">
+				<h4>jane Doe</h4>
+				<p>Architect</p>
+				<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+				<button >Contact</button>
+			</div>
+			<div class="collage">
+				<img class="photo" src="dan.jpg">
+				<h4>jane Doe</h4>
+				<p>Architect</p>
+				<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+				<button >Contact</button>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="contact">
+		<h1>Contact</h1>
+		<p>Lets get in touch and talk about your next project.</p>
+				<label for="Name"></label>
+				<input class="input" type="text" id="Name" name="Name" placeholder="Name"><br>
+
+				<label for="Name"></label>
+				<input class="input" type="text" id="Name" name="Name" placeholder="Email"><br>
+
+				<label for="Name"></label>
+				<input class="input" type="text" id="Name" name="Name" placeholder="Subject"><br>
+
+				<label for="Name"></label>
+				<input class="input" type="text" id="Name" name="Name" placeholder="Comment"><br>
+
+				<button class="button" type="submit">SEND MESSAGE</button>
+	</div>
+
+	<div class="image">	
+		<img class="gallery" src="map.jpg">
+	</div>
+
+	<footer class="footer">
+		Designed by ranveer
+	</footer>
+
+
+</body>
+</html>
